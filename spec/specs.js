@@ -3,11 +3,15 @@ describe('wordOrder', function() {
     expect(wordOrder("yeah")).to.eql(['yeah']);
     });
 
-    it('counts each instance of three words anf returns word in order of frequency', function() {
-    expect(wordOrder("yeah nope yeah")).to.eql(['nope', 'yeah']);
+    it('accept two diferent words and return in sorted order', function() {
+    expect(wordOrder("yeah nope")).to.eql(['yeah', 'nope']);
     });
 
-    it('counts each instance of three words anf returns word in order of frequency', function() {
-    expect(wordOrder("yeah nope yeah sure nope yeah sure sure plok sure")).to.eql(['plok', 'nope', 'yeah', 'sure']);
+    it('counts each instance of three words and returns word in order of frequency', function() {
+    expect(wordOrder("yeah nope yeah")).to.eql(['yeah', 'nope']);
+    });
+
+    it('counts each instance of three words and returns word in order of frequency', function() {
+    expect(wordOrder("yeah nope yeah sure nope yeah sure sure plok sure")).to.eql(['sure', 'yeah', 'nope', 'plok']);
     });
 });

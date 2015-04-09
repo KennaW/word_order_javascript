@@ -1,0 +1,23 @@
+#results {
+    display: none;
+}
+
+body {
+    background-color: #FF5CD6;
+    color: #590024;
+}
+
+h1 {
+    border-bottom: solid 1px #B2246B;
+}
+
+.btn {
+    background-color: #FF99CC;
+    color: black;
+}
+
+.end {
+    padding: 0px 5px;
+    border-left:solid 1px #B2246B;
+    border-right:solid 1px #B2246B;
+}
